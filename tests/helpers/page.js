@@ -38,6 +38,7 @@ class CustomPage {
         await this.page.goto('http://localhost:3000/blogs');
         // give some delay, so the following test will be run after the render process finished
         await this.page.waitFor('a[href="/auth/logout"]');
+        //
     }
 
     // For clearer function call, not the native puppeteer one
