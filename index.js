@@ -30,6 +30,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/blogRoutes')(app);
+require('./routes/uploadRoute')(app);
 
 // CRAZY. only use node server for react app when in production or ci mode
 if (['production', 'ci'].includes(process.env.NODE_ENV)) {
